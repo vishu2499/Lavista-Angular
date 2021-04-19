@@ -1,0 +1,40 @@
+
+  <body>
+     
+
+    <div class="container">
+        <h1>Update your Feedback</h1>
+        <form action="/update/" method="POST">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Post Title</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="post_title"
+              value="<%= records.post_title %>"
+              placeholder="Post Title"
+              name="post_title"
+            >
+
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Description</label
+            >
+            <textarea
+              class="form-control"
+              id="post_description"
+              rows="3"
+              name="post_description"
+            ><%= records.post_description %></textarea>
+          </div>
+          <input type="submit" class="btn btn-outline-primary" value="Update" />
+        </form>
+    </div>
+    
+    
+ 
+  </body>
+

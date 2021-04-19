@@ -1,0 +1,31 @@
+
+  <body>
+    
+
+    <div class="container">
+      <h1>Do You really Want to delete this BLOG?</h1>
+      <form action="/delete/" method="POST">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Post Title</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="post_title"
+            value="<%= records.post_title %>"
+            placeholder="Post Title"
+            name="post_title"
+          />
+        </div>
+
+        <input type="submit" class="btn btn-outline-danger" value="YES DELETE IT" />
+      </form>
+      <br>
+      <a href="/" class="btn btn-outline-primary">NO I DONT WANT TO DELETE</a>
+    </div>
+
+ 
+    
+  </body>
+

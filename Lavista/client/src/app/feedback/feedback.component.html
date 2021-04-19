@@ -1,0 +1,91 @@
+
+      
+     
+    <div>
+        <h2><b>PLEASE GIVE FEEDBACK</b> </h2>
+        <input type="text" name="searchsText" placeholder="Search" [(ngModel)]="searchText">
+    </div>
+    <hr><h4>Every Feedback Matters</h4>
+
+
+    <hr>
+    
+    <a routerLink="/insert-feedback" routerLinkActive="activeS">New Feedback</a>
+    <hr>
+        
+
+      
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                        <div class="page-wrapper">
+                            <div class="blog-list clearfix " *ngFor="let item of feedback | filter:searchText index as i">
+<!-- 
+                                <h4> {{item.post_title}} </h4>
+                                        <p> {{item.post_description}} </p> -->
+
+                                <!-- below this is a single post -->
+                                <div class="blog-box row">
+                                    
+                                    <div class="blog-meta big-meta col-md-8">
+                                        <h4> {{item.post_title}} </h4>
+                                        <p> {{item.post_description}} </p>
+                                        
+                                        <small><a href="/update/{{item._id }}" title="">Edit</a></small>
+                                        <small><a href="/deleteu/{{item._id }}" title="">Delete</a></small>
+
+
+                                    </div><!-- end meta -->
+                                </div><!-- end blog-box -->
+
+                                <hr class="invis">
+                                <!-- above this is a single post -->
+
+                             
+
+
+
+                            
+                                    <!-- <div class="blog-meta big-meta col-md-8">
+                                        <h4>CHOCOLATE RASPBERRY CAKE</h4>
+                        
+                                        <p>Instead, this fairly simple Chocolate Raspberry Cake is truly all you need to show somebody some love. With only raspberry jam for the filling, it is quite underrated and unassuming. But let me tell – this cake is so tasty! And this is coming from someone that is always trying to come up with next over-the-top creation or unique flavour pairing. Plus, the blushing raspberry frosting is the perfect pink. Also chocolate – because Valentine’s Day.</p>
+                                        
+                                    </div>end meta -->
+                                </div><!-- end blog-box -->
+
+                                <hr class="invis">
+                                
+                                    <div class="blog-meta big-meta col-md-8">
+                                        <h4>LEOPARD PRINT BUTTERCREAM CAKE</h4>
+                                        
+                                        <p>You can make your leopard spots as large or as small as you like depending on the size of your project. I made mine .5 to 1-inch in diameter. Draw circles on the back of your waxed paper squares if you need a guide, or just freehand it like I did. Use the burgundy buttercream to pipe small lines or dots that roughly outline a small circle. Fill in the center of the circle with the fuchsia buttercream.</p>
+                                        
+                                    </div><!-- end meta -->
+                                </div><!-- end blog-box -->
+
+                                <hr class="invis">
+
+
+                                    <div class="blog-meta big-meta col-md-8">
+                                        <h4>SPRINKLE GIRL CAKE
+                                        </h4>
+                                        <p>I am officially obsessed with these little sprinkle-haired cuties. A few years ago cakes featuring girls with hair made of berries and fresh fruit started popping up all over instagram. Instantly, I used my dessert forces for evil and thought, “Oooh, that’d be even better with candy or sprinkles!” The idea was filed away in the back of my brain and forgotten. Fortunately, it didn’t disappear entirely! It popped back up as I brainstormed ideas for Valentine’s Day cakes.</p>
+                                        
+                                    </div><!-- end meta -->
+                                </div><!-- end blog-box -->
+
+                         
+                                   
+
+                        <hr class="invis">
+                 
+      
+        
+
+        
+    </div><!-- end wrapper -->
+
+   
+
+
