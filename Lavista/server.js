@@ -13,7 +13,7 @@ const MongoClient = require("mongodb").MongoClient;
 
 app.use(cookieParser());
 app.use(express.json());
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4200;
 const { ageMW } = require("./middleware/age");
 let database, users, products;
 
